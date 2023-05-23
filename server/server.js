@@ -5,7 +5,7 @@ import { Configuration, OpenAIApi } from 'openai'
 
 dotenv.config()
 
-//console.log(process.env.OPENAI_API_KEY)
+console.log(process.env.OPENAI_API_KEY)
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -19,7 +19,7 @@ app.use(express.json())
 
 app.get('/', async (req, res) => {
   res.status(200).send({
-    message: 'Hello from CodeX!'
+    message: 'Hello from Buzzzztech Chat Bot'
   })
 })
 
